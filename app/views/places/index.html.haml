@@ -1,8 +1,9 @@
 %h1 Places
 
-= link_to "Add place", new_place_path, :class => 'btn btn-primary btn-lg'
+#main
+  .card
+    .card-block
+      %ul
+        = render @places
 
-.card
-  .card-block
-    %ul
-      = render @places
+  = yield

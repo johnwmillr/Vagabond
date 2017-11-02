@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Vagabond
+    = stylesheet_link_tag 'application', 'media' => 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+  %body
+    %h1.title Vagabond
+    #main
+      - if flash[:success]
+        #success.flashMessage= flash[:success]
+        %p
+
+      = link_to "Add place", new_place_path, :class => 'btn btn-primary btn-lg'
+
+      = yield
+
