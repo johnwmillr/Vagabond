@@ -21,3 +21,9 @@
 .byebug_history
 
 *~
+
+# Geocoder
+config/initializers/geocoder.rb
+
+# API Keys
+secrets.txt

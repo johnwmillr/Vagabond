@@ -6,3 +6,6 @@
 %p
   %strong Coordinates:
   (#{@place.latitude}, #{@place.longitude})
+%p
+  =image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@place.latitude},#{@place.longitude}&markers=#{@place.latitude},#{@place.longitude}&zoom=16&size=640x400&key=#{@static_map_api_key}",
+    :class => 'img-fluid img-rounded', :alt => "#{@place.title} on the map"
