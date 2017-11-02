@@ -1,6 +1,8 @@
 %header
-  %h1.display-4= @place.title
+  %h1=@place.title
 %p
-  Address: #{@place.address}
+  %strong Address:
+  #{@place.address}
 %p
-  Coordinates: #{@place.latitude}#{@place.longitude}
+  %strong Coordinates:
+  (#{@place.latitude}, #{@place.longitude})

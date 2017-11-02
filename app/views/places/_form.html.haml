@@ -2,11 +2,14 @@
 
     = f.label :title, 'Title'
     = f.text_field :title, :class => "form-control"
+    %p
 
     = f.label :visited_by, 'Visited by'
     = f.text_field :visited_by, :class => "form-control"
+    %p
 
     = f.label :address, 'Address'
     = f.text_field :address, :class => "form-control"
+    %p
 
     = f.submit 'Add!', :class => "btn btn-primary"
