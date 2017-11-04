@@ -1,24 +1,9 @@
-## README
+## Vagabond
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo follows the excellent [sitepoint tutorial](https://www.sitepoint.com/geocoder-display-maps-and-find-places-in-rails/) from @bodrovis for adding static and dynamic Google Maps to a Ruby on Rails app.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Usage
+```
+$bundle install
+$rails s
+```
